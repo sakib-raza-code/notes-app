@@ -2,6 +2,10 @@
 
 A modern and user-friendly Notes App built using **HTML, CSS, and JavaScript**. This application allows users to create, organize, edit, and manage notes efficiently with category-based tags, automatic timestamps, and dark mode support.
 
+## 🚀 Live Demo
+
+https://sakib-raza-code.github.io/notes-app/
+
 ## 🚀 Features
 
 - Create notes with a title and description
