@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/> -->
+</head>
+<body>
+    <div id="container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="logo">
+                <h3>Notes App</h3>
+            </div>
+            <div class="d-grid gap-2 col-12 mx-auto new-notes">
+                <button class="btn btn-primary" type="button">
+                    <i class="material-icons">add</i>
+                    <p>New Notes</p>
+                </button>
+            </div>
+
+            <div class="d-grid gap-2 col-12 mx-auto optn">
+                <button type="button" class="btn btn-outline-primary">
+                    <i class="material-icons">list_alt</i>
+                    <p>All Notes</p>
+                    <p class="count notes-count">0</p>
+                </button>
+                <!-- <button type="button" class="btn btn-outline-primary">
+                    <i class="ri-pushpin-2-fill pin"></i>
+                    <p>Pinned</p>
+                    <p class="count">0</p>
+                </button> -->
+                <button type="button" class="btn btn-outline-primary">
+                    <i class="material-icons">delete</i>
+                    <p >Trash</p>
+                    <p class="count">0</p>
+                </button>
+            </div>
+
+            <div class="ctg">
+                <hr>
+                <p class="ctg-name">Categories</p> 
+                <button type="button" class="btn btn-outline-info purple">
+                    <span class="dot"></span>
+                    <p>All</p>
+                    <p class="count">0</p>
+                </button>
+                <button type="button" class="btn btn-outline-info green">
+                    <span class="dot"></span>
+                    <p>Study</p>
+                    <p class="count">0</p>
+                </button>
+                <button type="button" class="btn btn-outline-info blue">
+                    <span class="dot"></span>
+                    <p>Work</p>
+                    <p class="count">0</p>
+                </button>
+                <button type="button" class="btn btn-outline-info red">
+                    <span class="dot"></span>
+                    <p>Personal</p>
+                    <p class="count">0</p>
+                </button>
+                <button type="button" class="btn btn-outline-info yellow">
+                    <span class="dot"></span>
+                    <p>Ideas</p>
+                    <p class="count">0</p>
+                </button>
+                
+            </div>
+
+        </div>
+
+        <div class="main-cont">
+            <div id="navbar">
+                <div class="search-bar">
+                    <i class="material-icons">search</i>
+                    <input type="text" placeholder="Search notes...">
+                </div>
+                <div class="profile">
+                    <i class="material-icons theam-icon">light_mode</i>
+                    <span class="dp"></span>
+                </div>
+            </div>
+
+            <div class="write hide">
+                <div class="content">
+                    <input type="text" placeholder="Note title...">
+                    <textarea name="text" id="note" placeholder="Write your note here..."></textarea>
+                </div>
+                <div class="main-addnotes">
+                    <div class="note-tag tag">
+                        <span class="green"><p>Study</p></span>
+                        <span class="blue"><p>Work</p></span>
+                        <span class="red"><p>Personal</p></span>
+                        <span class="yellow"><p>Ideas</p></span>
+                    </div>
+                    <div class="add-btn">
+                        <button type="button" class="btn btn-primary">
+                            <i class="material-icons">note_add</i>
+                            <p>Add Note</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card none">
+                    <div class="card-ttl">
+                        <h5>Study Plan</h5>
+                        <!-- <i class="ri-pushpin-fill"></i> -->
+                    </div>
+                    <div class="card-cont">
+                        <p>Complete JavaScript project by next week.
+                        Focus on DOM manipulation and
+                        localStorage.</p>
+                    </div>
+                    <div class="date"><p>6 Jun 2026 . 2:25PM</p></div>
+                    <div class="tag">
+                        <span class="none"><p>none</p></span>
+                        <div class="tag-icons">
+                            <i class="material-icons edit">edit_document</i>
+                            <i class="material-icons delete">delete</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
